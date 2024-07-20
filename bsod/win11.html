@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BSOD</title>
+    <style type="text/css">
+        body {
+            background-color: rgb(24, 116, 217);
+            color: #FFFFFF;
+            font-family: Microsoft Yahei, "Helvetica Neue", Helvetica, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+            margin-left: 100px;
+        }
+
+        .face {
+            font-size: 100px;
+        }
+
+        p {
+            font-size: 24px;
+            padding: 8px;
+            line-height: 40px;
+        }
+
+        .tips {
+            font-size: 16px
+        }
+
+        /*针对小屏幕的优化*/
+        @media screen and (max-width: 600px) {
+            body {
+                margin: 0 10px;
+            }
+
+            p {
+                font-size: 18px;
+                line-height: 30px;
+            }
+
+            .tips {
+                display: inline-block;
+                padding-top: 10px;
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+    </script>
+    <span class="face">:(</span>
+    <p>你的设备遇到问题，需要重启。<br>
+        我们只收集某些错误信息，然后为你重新启动。<br><br>
+
+        99% 完成
+    </p>
+    <img id="qr" style="float: left; margin-right: 30px; display: block;" src="nt10.png">
+    <div style="float:left;width:%;">
+        <p style="font-size:14pt;margin-top:0px;margin-left:px;  padding:0;line-height:32px;"><span
+                id="bsline4">有关此问题的详细信息和可能的解决方法，请访问 </span><br><span
+                id="bsline5">https://www.windows.com/stopcode</span>
+            <br><br><span id="bsline6">如果致电支持人员，请向他们提供以下信息：</span>
+            <br><span id="bsline7">错误代码：CRITICAL_PROCESS_DIED</span>
+        </p>
+    </div>
+</body>
+<script>
+</script>
+
+</html>
