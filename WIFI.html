@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset = "UTF-8" />
+    <title>Wifi连接</title>
+</head>
+<body>
+    <div>
+        <p>Wifi名称：1301-1</p>
+        <p>Wifi密码：<input type="text" id="1301-1" value="***********"><button onclick="js:lwp ('1301-1' , '13412968045' , '1301-1s')" id="1301-1s">*_*</button></p>
+        <p>Wifi频段：2.4GHz</p>
+    </div>
+    <h2>--------------------------------</h2>
+    <div>
+        <p>Wifi名称：1301-1-5G</p>
+        <p>Wifi密码：<input type="text" id="1301-1-5G" value="***********"><button onclick="js:lwp ('1301-1-5G' , '13412968045' , '1301-1-5Gs')" id="1301-1-5Gs">*_*</button></p>
+        <p>Wifi频段：5GHz</p>
+    </div>
+    <h2>--------------------------------</h2>
+    <div>
+        <p>Wifi名称：CCMC-E5J4</p>
+        <p>Wifi密码：<input type="text" id="CCMC-E5J4" value="***********"><button onclick="js:lwp ('CCMC-E5J4' , 'bKfG9bfe' , 'CCMC-E5J4s')" id="CCMC-E5J4s">*_*</button></p>
+        <p>Wifi频段：2.4GHz</p>
+    </div>
+    <h2>--------------------------------</h2>
+    <div>
+        <p>Wifi名称：CCMC-E5J4-5G</p>
+        <p>Wifi密码：<input type="text" id="CCMC-E5J4-5G" value="***********"><button onclick="js:lwp ('CCMC-E5J4-5G' , 'bKfG9bfe' , 'CCMC-E5J4-5Gs')" id="CCMC-E5J4-5Gs">*_*</button></p>
+        <p>Wifi频段：2.4GHz</p>
+    </div>
+</body>
+<script>
+    function lwp (id , p , hid) {
+        var n = document.getElementById(id).value;
+        if (n.charAt (0) == '*') {
+            document.getElementById(id).value = p;
+            document.getElementById(hid).innerText = '-_-';
+        }
+        else {
+            var newString = '';
+            for (var i = 0; i < n.length; ++i) {
+                newString += '*';
+            }
+            document.getElementById(id).value = newString;
+            document.getElementById(hid).innerText = '*_*';
+        }
+    }
+</script>
+</html>
